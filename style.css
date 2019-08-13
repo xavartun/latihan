@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E4E5E7;
+    margin:auto;
+}
+
+/* style untuk navbar */
+.navbar {
+    background-color: white;
+    text-align: center;
+    overflow: auto;
+    width: 100%;
+    margin: auto;
+}
+.navbar a {
+    float: left;
+    padding: 15px;
+    text-decoration: none;
+    width:50%;
+    text-align: center;
+    color: black;
+}
+.navbar a:hover{
+    background-color: #616161;
+    color: white;
+}
+  
+/* style untuk area kolom */
+.kolom {
+    background-color: #E4E5E7;
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+  
+/* area untuk info (personal detail) */
+.kolom.info {
+    width: 25%;
+    height: 100%;
+}
+.area-info{
+    background-color: white;
+    padding: 10px;
+}
+.area-info img{
+    max-width: 100%;
+    display: inline-block;
+}
+  
+/* area utama/konten */
+.kolom.konten {
+    width: 75%;
+    height: 100%;
+}
+.area-konten{
+    background-color: white;
+    padding: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* style secara umum */
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+ text-align: left;
+ padding: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    text-align: left;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+li a:hover{
+    color: #808080;
+    font-weight: bold;
+}
+
+/* style untuk indikator skill */
+.judul-skil {
+    padding-left: 15px; 
+    margin-bottom: -25px;
+}
+.skill-bg {
+    margin-left: 300px;
+    width: 70%;
+    background-color: #ddd;
+  }
+
+.skills {
+    text-align: right;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+}
+  
+/* footer */
+.footer {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 960px) {
+    body {font-size: 2vw;}
+    .kolom.info, .kolom.konten {
+      width: 100%;
+    }
+    .area-konten {
+        margin-left:0;
+    }
+    .skill-bg {
+        margin:0;
+        width: 100%;
+    }
+    .judul-skil{
+        padding:0;
+        margin: 0;
+    }
+}
